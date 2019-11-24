@@ -26,6 +26,7 @@ class FogServerProtocol(protocol.Protocol):
 
     # When this fog node receives data, this function will be triggered
     def dataReceived(self, data):
+        print(data)
         data = data.decode("ascii")
         unpacked_data = unpack(data)
         for data in unpacked_data:
@@ -303,7 +304,7 @@ def main():
     resetTaskTime()
     resetQueueState()
     # You need to modify the cloud_ip to the IP of your own Cloud instance
-    cloud_ip = '54.206.45.203'
+    cloud_ip = '142.150.199.216'
     cloud_port = 10000
     # Find an available port
     tcp_port = find_idle_port()
