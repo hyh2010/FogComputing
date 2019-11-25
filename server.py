@@ -304,7 +304,8 @@ def main():
     resetTaskTime()
     resetQueueState()
     # You need to modify the cloud_ip to the IP of your own Cloud instance
-    cloud_ip = '142.150.199.216'
+    #cloud_ip = '142.150.199.216'
+    cloud_ip = '10.11.13.29'
     cloud_port = 10000
     # Find an available port
     tcp_port = find_idle_port()
